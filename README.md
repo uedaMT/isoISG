@@ -1,4 +1,4 @@
 # isoISG
 
-- isoISG annotation (gtf file)
-- isoISG sequences (fasta file)
+- isoISG annotation (isoISG_annot.gtf)
+- isoISG sequences (isoISG_annot.fa)
