@@ -8,5 +8,5 @@ https://genome.ucsc.edu/s/UEDA/isoISG
 
 
 The annotation files generated in LCL
-- isoISG annotation [isoISG_annot.gtf.bz2](https://drive.google.com/file/d/1kFI3qG0Vw7UmQ0ZBjPIg_ywyhoOGo6AY/view?usp=share_link)
-- isoISG nucleotide sequences [isoISG_nt.fa.gz2](https://drive.google.com/file/d/1PtJjRlbOMu1S2FKIUlRC4VnsVWj7pdj2/view?usp=share_link)
+- isoISG annotation [isoISG_annot.gtf.bz2](https://drive.google.com/u/4/uc?id=1kFI3qG0Vw7UmQ0ZBjPIg_ywyhoOGo6AY&export=download)
+- isoISG nucleotide sequences [isoISG_nt.fa.gz2](https://drive.google.com/u/4/uc?id=1PtJjRlbOMu1S2FKIUlRC4VnsVWj7pdj2&export=download)
