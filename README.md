@@ -1,5 +1,5 @@
 # isoISG
-This repository serves as a source of annotation data (gtf, fasta), supplementary data, and scripts used in a paper "Functional and dynamic profiling of transcript isoforms reveals essential roles of alternative splicing in interferon response".
+This repository serves as a source of annotation data, supplementary data, and scripts used in a paper "Functional and dynamic profiling of transcript isoforms reveals essential roles of alternative splicing in interferon response".
 
 We generated a novel isoform annotation for IFN-α-stimulated B-cells, called isoISG (isoforms of Interferon-Stimulated Genes), using two long-read sequencing platforms (PacBio IsoSeq and Nanopore).
 
