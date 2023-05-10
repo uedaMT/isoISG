@@ -5,7 +5,7 @@ We generated a novel isoform annotation for IFN-α-stimulated B-cells, called is
 
 
 
-A UCSC browser is available
+A UCSC browser is available<br>
 https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
 
