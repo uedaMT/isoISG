@@ -12,7 +12,7 @@ The isoISG annotation files generated in LCL
 - SQANTI classification file: [isoISG_sqanti-classification.txt.bz2](https://drive.google.com/u/4/uc?id=1D9037FZ3P-0va6guvpDL-wVvTETwA5aK&export=download)
 - SQANTI junction file: [isoISG_sqanti-junctions.txt.bz2](https://drive.google.com/u/4/uc?id=1Q4hk-w22he1ccR3sSEwjXqF5VD-inIir&export=download)<br><br>
 
-Additionally, we have provided a UCSC browser link where you can visualize the isoISG annotation in the context of the genome: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
+A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
 If you're interested in our research, we recommend checking out the abstract or full paper for an overview of our main findings. Thank you for visiting our repository!
 
