@@ -14,8 +14,7 @@
 #    To do this, replace the path within the setwd() function below with the desired directory path.
 	 setwd("")
 
-# 2) Specify the type and make grops for comparison.
-	gr <- read.table ("group_IFN.txt", header=T)
+# 2) Prepare group file (group_IFN.txt) 
 	# make text file of the condition group list (group_IFN.txt) like following.
 	# gr
 	#    sample_id condition
@@ -31,6 +30,8 @@
 	#10 SRR7733623       72h
 	#11 SRR7733624       72h
 
+# 3) Specify the type and make groups for comparison.
+	gr <- read.table ("group_IFN.txt", header=T)	
 	#-- Make group Control vs 24h
 	grp <- gr[c(1:7),]
 	typ <- "24h"
@@ -38,6 +39,7 @@
 	#-- Make group Control vs 72h
 	#grp <- gr[c(1:3,8:11),]
 	#typ <- "72h"
+	
 #========================================
 
 
