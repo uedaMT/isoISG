@@ -2,7 +2,7 @@
 #    Perform IsoformSwitchAnalyzeR analysis
 #############################################
 #
-# This script performs DIU analysis using IsoformSwitchAnalyzeR.
+# This script performs DIU and functional consequence analyses using IsoformSwitchAnalyzeR.
 # Please ensure that you have the necessary dependencies installed before running this script.
 # Author: Mahoko T. Ueda
 # Date: May 30, 2023
