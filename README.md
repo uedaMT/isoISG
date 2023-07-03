@@ -15,7 +15,7 @@ The isoISG annotation files generated in LCL
 - Amino acid sequence: [isoISG_aa.fa.gz2](https://drive.google.com/u/4/uc?id=185qRJncPlqiT_u-yKvlWbB9n1nRijfk7&export=download)
 - SQANTI classification file: [isoISG_sqanti-classification.txt.bz2](https://drive.google.com/u/4/uc?id=1D9037FZ3P-0va6guvpDL-wVvTETwA5aK&export=download)
 - SQANTI junction file: [isoISG_sqanti-junctions.txt.bz2](https://drive.google.com/u/4/uc?id=1Q4hk-w22he1ccR3sSEwjXqF5VD-inIir&export=download)<br><br>
-- Table of isoforms with IR in the CDS of reference gene: [ovlp_cds-AS.txt](https://drive.google.com/file/d/1g6CcIbubZlIWKNNERwyr8kULIMlpuTmi&export=download)
+- Table of isoforms with IR in the CDS of reference gene: [ovlp_cds-AS_dIF0.01.txt](https://drive.google.com/file/d/15ZqAW7xTWle-II1XVbThAzrkjcwOTJFR&export=download)
 
 
 If you're interested in our research, please check out our full paper for an overview of our main findings. Thank you for visiting our repository!
