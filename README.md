@@ -18,8 +18,8 @@ The isoISG annotation files generated in LCL
 
 Data for intron retention analysis in primary B-cells
 - Table of isoforms with IR in the CDS of reference gene: [IR-isoform_list_dIF0.01.txt](https://drive.google.com/u/4/uc?id=1ml7gjelLKipXSAltvD9DBVTmScI-M-vv&export=download)
-- Aggregated IR- vs nonIR isforom expression scaled TPM [scaled_tpm_isoform_IR-vs-nonIR.txt.bz2](https://drive.google.com/u/4/uc?id=1thHXeQEjJpjN2EqEER5q33HVegR_UnoB&export=download)
-- Aggregated IR- vs nonIR isforom expression raw read counts [raw_cnt_isoform_IR-vs-nonIR.txt.bz2](https://drive.google.com/u/4/uc?id=/1grLqm4agsESMz11JkHfqbp9yv-KtpAIZ&export=download)
+- Aggregated IR- vs nonIR-isforom expression scaled TPM [scaled_tpm_isoform_IR-vs-nonIR.txt.bz2](https://drive.google.com/u/4/uc?id=1thHXeQEjJpjN2EqEER5q33HVegR_UnoB&export=download)
+- Aggregated IR- vs nonIR-isforom expression raw read counts [raw_cnt_isoform_IR-vs-nonIR.txt.bz2](https://drive.google.com/u/4/uc?id=1grLqm4agsESMz11JkHfqbp9yv-KtpAIZ&export=download)<br><br><br>
 
 
 If you're interested in our research, please check out our full paper for an overview of our main findings. Thank you for visiting our repository!
