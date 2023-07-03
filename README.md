@@ -7,7 +7,7 @@ To explore the isoISG annotation further, we have made available the following f
 
 A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
----
+
 ## Download
 The isoISG annotation files generated in LCL
 - GTF file: [isoISG_annot.gtf.bz2](https://drive.google.com/u/4/uc?id=1kFI3qG0Vw7UmQ0ZBjPIg_ywyhoOGo6AY&export=download)
