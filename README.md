@@ -17,9 +17,9 @@ The isoISG annotation files generated in LCL
 - SQANTI junction file: [isoISG_sqanti-junctions.txt.bz2](https://drive.google.com/u/4/uc?id=1Q4hk-w22he1ccR3sSEwjXqF5VD-inIir&export=download)<br><br><br>
 
 Data for DEG/DET analysis using isoISG
-- Gene and transcript table: [isoISG_txt2gene.txt](https://drive.google.com/u/4/uc?id=1aIW3gb2a-h9wG8vdlyZD7x6qzYOG3U1s&export=download)
+- Gene and transcript table: [isoISG_txt2gene.txt.gz2](https://drive.google.com/u/4/uc?id=1RlILCvVhpYRLrCpPuLLeMj3wOBniI8YO&export=download)
 <br><br><br>
-
+https://drive.google.com/file/d/1RlILCvVhpYRLrCpPuLLeMj3wOBniI8YO/view?usp=sharing
 
 Data for intron retention analysis in primary B-cells
 - Table of isoforms with IR in the CDS of reference gene: [IR-isoform_list_dIF0.01.txt](https://drive.google.com/u/4/uc?id=1ml7gjelLKipXSAltvD9DBVTmScI-M-vv&export=download)
