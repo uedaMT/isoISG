@@ -19,6 +19,8 @@ The isoISG annotation files generated in LCL
 Data for DEG/DET analysis using isoISG
 - Gene and transcript table: [isoISG_txt2gene.txt](https://drive.google.com/u/4/uc?id=1aIW3gb2a-h9wG8vdlyZD7x6qzYOG3U1s&export=download)
 <br><br><br>
+
+
 Data for intron retention analysis in primary B-cells
 - Table of isoforms with IR in the CDS of reference gene: [IR-isoform_list_dIF0.01.txt](https://drive.google.com/u/4/uc?id=1ml7gjelLKipXSAltvD9DBVTmScI-M-vv&export=download)
 - Aggregated IR- vs nonIR-isforom expression scaled TPM [scaled_tpm_isoform_IR-vs-nonIR.txt.bz2](https://drive.google.com/u/4/uc?id=1thHXeQEjJpjN2EqEER5q33HVegR_UnoB&export=download)
