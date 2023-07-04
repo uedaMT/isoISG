@@ -3,6 +3,15 @@
 #SBATCH -o stdout.%J
 #SBATCH -e stderr.%J 
 
+################################
+#  Perform sQTL analysis
+################################
+#
+# This script performs RTC analysis.
+# Please ensure that you have the necessary dependencies installed before running this script.
+# Author: Mahoko T. Ueda
+# Date: May 30, 2023
+#
 ###############################
 # Set your parameters
 ###############################
@@ -13,8 +22,8 @@ VCF=VCF_file
 BED=Expression_file
 WIN=1000000
 
-
 ###############################
+
 
 for i in $(seq 1 22); do
 #for i in $(seq 1 3); do
