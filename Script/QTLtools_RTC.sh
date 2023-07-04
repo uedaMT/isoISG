@@ -25,7 +25,7 @@ for i in $(seq 1 22); do
 #for i in $(seq 4 7); do
     QTLtools rtc --vcf ${DIR1}/chr${i}_${VCF}.gz \
 	 --bed ${DIR2}/chr${i}_${BED}.gz \
-     --hotspot ${HOT} \
+	 --hotspot ${HOT} \
 	 --gwas-cis ${GWAS} \
 	  ${QTL} \
 	  --normal \
