@@ -5,9 +5,6 @@ In this study, we generated a novel isoform annotation for IFN-α-stimulated B-c
 
 To explore the isoISG annotation further, we have made available the following files:<br><br>
 
-A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
-
-
 ## Download
 The isoISG annotation files generated in LCL
 - GTF file: [isoISG_annot.gtf.bz2](https://drive.google.com/u/4/uc?id=1kFI3qG0Vw7UmQ0ZBjPIg_ywyhoOGo6AY&export=download)
@@ -25,6 +22,8 @@ Data for intron retention analysis in primary B-cells
 - Aggregated IR- vs nonIR-isforom expression scaled TPM [scaled_tpm_isoform_IR-vs-nonIR.txt.bz2](https://drive.google.com/u/4/uc?id=1thHXeQEjJpjN2EqEER5q33HVegR_UnoB&export=download)
 - Aggregated IR- vs nonIR-isforom expression raw read counts [raw_cnt_isoform_IR-vs-nonIR.txt.bz2](https://drive.google.com/u/4/uc?id=1grLqm4agsESMz11JkHfqbp9yv-KtpAIZ&export=download)<br><br><br>
 
+
+A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
 If you're interested in our research, please check out our full paper for an overview of our main findings. Thank you for visiting our repository!
 
