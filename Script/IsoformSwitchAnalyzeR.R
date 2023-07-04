@@ -7,30 +7,82 @@
 # Author: Mahoko T. Ueda
 # Date: May 30, 2023
 #
-#=======================================
-# Usage:
-#=======================================
-# 1) Set the working directory to the location where your data files are stored.
-#    To do this, replace the path within the setwd() function below with the desired directory path.
-	 setwd("")
+#############################################
 
-# 2) Specify the path to your input file in the 'filename' argument of the 'read.table()' function below.
+args <- commandArgs(trailingOnly = TRUE)
+
+# Define default values
+dir <- getwd()
+input <- NULL
+output <-NULL
+
+# Parse the options
+for (i in seq_along(args)) {
+  if (args[i] == "--dir") {
+    dir <- args[i + 1]
+  } else if (args[i] == "--input") {
+    input <- args[i + 1]
+  } else if (args[i] == "--output") {
+    output <- args[i + 1]
+  } else if (args[i] == "--gtf") {
+    gtf_file <- args[i + 1]
+  } else if (args[i] == "--fasta") {
+    fasta_file <- args[i + 1]
+  } else if (args[i] == "--list") {
+    file_list <- args[i + 1]
+  } else if (args[i] == "--help") {
+    cat("Usage: Rscript IsoformSwitchAnalyzeR.R [options]\n")
+    cat("\nOptions:\n")
+    cat("  --dir DIR: Working directory\n")
+    cat("  --input DIRNAME: Directory where your quant.sf files (output of Salmon) are located.\n")
+    cat("  --output FILENAME: Output file name  (e.g., [output]_AS_table_withName.txt)\n")
+    cat("  --gtf FILENAME: GTF file name\n")
+    cat("  --fasta FILENAME: Fasta file name\n")
+    cat("  --list FILENAME: Table containing sample name and group\n")
+    q(save = "no")
+  }
+}
+
+# Use the options
+parentDir = input
+setwd(dir)
+
+#=======================================
+# File explanations
+#=======================================
+# 1) Table containing sample name and group (--list)
 #  	 Design file (sampleID condition) 
-     myDesign <- read.table("path/to/your/input_file.csv", header = TRUE, sep = "\t")
-
-
-# 3) Use the line of code below to convert the 'condition' column into a factor variable with custom levels.
+#	 sampleID	condition
+#	 SRR7733637	unstimulated
+#	 SRR7733639	unstimulated
+#	 SRR7733640	unstimulated
+#	 SRR7733606	24h
+#	 SRR7733607	24h
+#	 SRR7733608	24h
+#
+# 2) Use the line of code below to convert the 'condition' column into a factor variable with custom levels.
+#	 In this case, the custom levels are 'unstimulated', '24h', and '72h'.
 #    myDesign$condition<- factor(myDesign$condition, levels = c("unstimulated","24h","72h"))
-
-# 4) Set the 'parentDir' variable to the path where your quant.sf files (output of Salmon) are located.
-     parentDir = "path/to/your/salmon_output"
-
-
-#//// Othre requirements  /////
-# Prediction of protein domains ===> Pfam can be run either locally or via their webserver.  
-# Prediction of coding Potential ===> CPAT can be run either locally or via their webserver.
-# Prediction of Signal Peptides ===> SignalP can be run either locally or via their webserver (V5 is supported)
-# Prediction of Intrinsically Disordered Regions ===> IUPred2A can run either locally or via their webserver
+#
+# 3) Prepare isoform quantification matrix by salmon.
+#
+# 4) Gene name for isoISG (gene_name.txt), or you can create your own dataset.
+#	 isoform_id	gene_name
+#	 PB.2.1	ENSG00000276256
+#	 PB.2.2	ENSG00000276256
+#	 PB.2.3	ENSG00000276256
+#	 PB.3.1	novelGene_7
+#	 PB.3.4	novelGene_9	
+#
+# 5) GTF file (isoISG_annot.gtf) or your own gtf file.
+#
+# 6) fasta file (isoISG_nt.fa) or your own fasta file.
+#
+# 7) Othre requirements
+# 	 Prediction of protein domains ===> Pfam can be run either locally or via their webserver.  
+# 	 Prediction of coding Potential ===> CPAT can be run either locally or via their webserver.
+# 	 Prediction of Signal Peptides ===> SignalP can be run either locally or via their webserver (V5 is supported)
+# 	 Prediction of Intrinsically Disordered Regions ===> IUPred2A can run either locally or via their webserver
 #========================================
 
 
@@ -61,12 +113,19 @@ salmonQuant <- importIsoformExpression(parentDir,
 # 'isoformExonAnnoation', and 'isoformNtFasta'.
 # Modify the paths to the GTF file and the FASTA file according to your specific file locations.
 
+
+# Set the paths to the GTF and fasta files
+gtf_path <- file.path(dir, gtf_file)
+fasta_path <- file.path(dir, fasta_file)
+
+
+
 SwitchList <- importRdata(
     isoformCountMatrix   = salmonQuant$counts,
     isoformRepExpression = salmonQuant$abundance,
     designMatrix         = myDesign,
-    isoformExonAnnoation = "/path/to/your/gtf",
-    isoformNtFasta       = "path/to/your/fasta",
+    isoformExonAnnoation = gtf_path,
+    isoformNtFasta       = fasta_path,
     showProgress = FALSE,
     addAnnotatedORFs = TRUE,
     ignoreAfterBar = FALSE,
@@ -84,7 +143,6 @@ SwitchList <- preFilter(
     isoformExpressionCutoff = 0,
     removeSingleIsoformGenes = TRUE
 )
-
 #saveRDS(SwitchList, file = "path/to/your/output/filter_geneOver1_noConsequence-noAS.rds")
 
 #--------------------------
@@ -139,7 +197,7 @@ SwitchList <- extractSequence(
         addToSwitchAnalyzeRlist = TRUE,
         writeToFile = TRUE,
         pathToOutput =  "fasta",
-        outputPrefix='IsoformSwitch_dIF0.05_p0.05',
+        outputPrefix=output,
 )
 
 
@@ -232,10 +290,7 @@ saveRDS(SwitchList, file = "SwitchAnalyzeR_result_dIF0.05_p0.05.rds")
 # Adding gene names and output tables
 #------------------------------------------
 # Read the gene names from the "gene_name_text" file.
-# Modify the file path if needed. ('isoform_id', 'gene_name')
-
-name <- read.table("gene_name_text")
-
+name <- read.table("gene_name.txt")
 colnames (name) <- c('isoform_id', 'gene_name')
 names (SwitchList)
 
@@ -262,9 +317,7 @@ cc <- subset (CON, CON$switchConsequence != 'NA')
 AS <- SwitchList$AlternativeSplicingAnalysis
 AS <- merge (AS, name, by="isoform_id")
 
-head (CON$switchConsequence)
-
-
+#head (CON$switchConsequence)
 #write.table (DIU, "AS-event_table_Switch.txt", quot = F, row.names=F,sep="\t")
 #write.table (DOM, "AS-event_table_domain.txt", quot = F, row.names=F,sep="\t")
 #write.table (CON, "AS-event_table_consequence.txt", quot = F, row.names=F,sep="\t")
@@ -272,9 +325,10 @@ head (CON$switchConsequence)
 #write.table (SwitchList$isoformRepExpression, "scaled_TPM.txt", quot = F, row.names=F, sep="\t")
 
 
-write.table (dd, "DIU_table_pval0.05.txt", quot = F, row.names=F,sep="\t")
-write.table (cc, "Consequence_TRUE.txt", quot = F, row.names=F,sep="\t")
-write.table (AS, "AS_table_withName.txt", quot = F, row.names=F,sep="\t")
+write.table(dd, paste0(output, "_DIU_table_pval0.05.txt"), quot = FALSE, row.names = FALSE, sep = "\t")
+write.table(cc, paste0(output, "_Consequence_TRUE.txt"), quot = FALSE, row.names = FALSE, sep = "\t")
+write.table(AS, paste0(output, "_AS_table_withName.txt"), quot = FALSE, row.names = FALSE, sep = "\t")
+
 
 
 ######################################
