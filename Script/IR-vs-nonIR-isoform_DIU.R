@@ -7,15 +7,46 @@
 # Author: Mahoko T. Ueda
 # Date: May 30, 2023
 #
-#=======================================
-# Usage:
-#=======================================
-# 1) Set the working directory to the location where your data files are stored.
-#    To do this, replace the path within the setwd() function below with the desired directory path.
-	setwd("")
+#################################################################
 
-# 2) Prepare group file (group_IFN.txt) 
-#	 Make text file of the condition group list (group_IFN.txt) like following.
+args <- commandArgs(trailingOnly = TRUE)
+
+# Define default values
+dir <- getwd()
+input <- "raw_count.txt"
+output <- "drimseq_result.txt"
+
+# Parse the options
+for (i in seq_along(args)) {
+  if (args[i] == "--dir") {
+    dir <- args[i + 1]
+  } else if (args[i] == "--input") {
+    input <- args[i + 1]
+  } else if (args[i] == "--output") {
+    output <- args[i + 1]
+  } else if (args[i] == "--list") {
+    file_list <- args[i + 1]
+  } else if (args[i] == "--help") {
+    cat("Usage: Rscript IR-vs-nonIR-isoform_DIU.R [options]\n")
+    cat("\nOptions:\n")
+    cat("  --dir DIR: Working directory\n")
+    cat("  --input FILENAME: Input file name\n")
+    cat("  --output FILENAME: Output file name\n")
+    cat("  --list FILENAME: Table containing sample name and group\n")
+    q(save = "no")
+  }
+}
+
+# Use the options
+setwd(dir)
+
+
+#=======================================
+# File explanation
+#=======================================
+# 1) Set the working directory (--dir) to the location where your data files are stored.
+# 2) Specify the type or names (--typ) for comparison.	 
+# 3) Prepare group file (--list) 
 #
 #	   sample_id condition
 #	 SRR7733637   control
@@ -25,21 +56,16 @@
 #	 SRR7733607       24h
 #	 SRR7733608       24h
 #	 SRR7733609       24h
-#	 SRR7733621       72h
-#	 SRR7733622       72h
-#	 SRR7733623       72h
-#	 SRR7733624       72h
 #
-# 3) Specify the type and make groups for comparison.
-	gr <- read.table ("group_IFN.txt", header=T)	
-#-- Make group Control vs 24h --
-	grp <- gr[c(1:7),]
-	typ <- "24h"
-
-#-- Make group Control vs 72h --
-	#grp <- gr[c(1:3,8:11),]
-	#typ <- "72h"
-	
+# 4) Prepare raw read matrix for IR and non-IR isoforms (--input) 
+#    #Raw read counts for IR- and nonIR-isoforms
+#		  Gene	ID	SRR7733637	SRR7733639	SRR7733640	SRR7733606	SRR7733607	SRR7733608	SRR7733609
+#	 	  AAAS	AAAS.IR	91.239	181.155	26.264	85.132	153.435	58.614	49.533
+#		  AAAS	AAAS.nonIR	307.761	259.846	164.736	274.707	223.565	281.386	448.462
+#		  AASDHPPT	AASDHPPT.IR	53.259	47.984	100.932	102.425	60.517	20.799	98.141
+#		  AASDHPPT	AASDHPPT.nonIR	773.197	688.017	458.328	1051.577	899.485	629.204	1109.874
+#		  ABCC5	ABCC5.IR	0	118.143	26.093	0	46.599	68.943	181.637
+#		  ABCC5	ABCC5.nonIR	334	184.857	119.907	198.001	157.4	116.056	209.363	
 #========================================
 
 
@@ -47,25 +73,28 @@
 ######################################
 #         Script Starts Here
 ######################################
-
 library(data.table)
-library(GenomicFeatures)
-library(tximport)
 library(DRIMSeq)
-library(stageR)
 library(dplyr)
-library(reshape2)
-library(ggplot2)
-library(ggbeeswarm)
+
+
+# Read the comparison file specified by --list
+if (!is.null(file_list)) {
+  grp <- read.table(file_list, header = TRUE)  # Update the function and arguments based on your file format
+}
 
 
 # Read raw count data for IR and nonIR isoforms
-c <- read.table ("raw_cnt_isoform_IR-vs-nonIR.txt", header=T)
-cts <- c[,c(3:13)]
-rownames (cts) <- c$ID
-cou <- cts[,colnames(cts) %in% grp$sample_id]
-txgn <- c[,c(1,2)]
-colnames (txgn) <- c("GENEID", "TXNAME")
+#cts <- read.table ("raw_cnt_isoform_IR-vs-nonIR.txt", header=T)
+# Read the input file specified by --input
+if (!is.null(input)) {
+  cts <- read.table(input, header = TRUE)  # Update the function and arguments based on your file format
+  txgn <- cts[,c(1,2)]
+  rownames (cts) <- cts$ID
+  cou <- cts[,colnames(cts) %in% grp$sample_id]
+  colnames (txgn) <- c("GENEID", "TXNAME")
+}
+
 
 dim(cou)
 range(colSums(cou)/1e6)
@@ -129,9 +158,7 @@ table(res$adj_pvalue < 0.05)
 res1 <- subset (res, res$adj_pvalue < 0.05)
 
 # only significant result (FDR < 0.05)
-write.table (res1, "drimseq_result_IR_FDR0.05_cont-", typ, "_minGeneCount10_miniSmpGene3_miniSmplPro0.01.txt", quote=F, sep = "\t", row.names=F)
+write.table (res1, out, quote=F, sep = "\t", row.names=F)
 
-# All result
-#write.table (res1, "drimseq_result_IR_all_cont-", typ, "_minGeneCount10_miniSmpGene3_miniSmplPro0.01.txt", quote=F, sep = "\t", row.names=F)
 
 
