@@ -12,7 +12,7 @@
 #---------------------------------------------------------------------------
 #    Usage
 #---------------------------------------------------------------------------
-# Use [R_run_trans-eff.sh] for running thie script to specify chromosome number...
+# Use [run_trans-eff.sh] for running thie script to specify chromosome number...
 # Set the following parameters...!!!
 
 	setwd ("/path/to/your/working_directory")
