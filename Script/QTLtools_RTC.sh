@@ -1,13 +1,21 @@
 #!/bin/bash
 #SBATCH --job-name=QTLtools
 
+######################################################################
+#  Perform RTC analysis to check colocalzation between GWAS and sQTL
+######################################################################
+#
+# This script performs RTC analysis.
+# Please ensure that you have the necessary dependencies installed before running this script.
+# Author: Mahoko T. Ueda
+# Date: May 30, 2023
+#
 ###############################
 # Set your parameters
 ###############################
 
 DIR1=/path/to/your/vcf_file
-DIR2=/data02/home/mahoko/MyProject/1KG_JP/IFNa2/Salmon/R/proportion/PEER/chr
-DIR3=/data02/home/mahoko/MyProject/1KG_JP/IFNa2/IsoSeq/sQTL/QTLtools_salmon_proportion
+DIR2=/path/to/your/vcf_file/expression_file
 
 VCF=VCF_file
 BED=Expression_file
