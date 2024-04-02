@@ -42,7 +42,7 @@ python sqanti3_qc.py ${GTF} \
        ${GTF} ${GENOME} \
        --cage_peak ${CAGE} \
        --polyA_motif_list ${PLM} \
-	   --polyA_peak ${PLP} \
+       --polyA_peak ${PLP} \
        -o ${NAM}_SQANTI3 \
        --report pdf \
        --isoAnnotLite --genename \
