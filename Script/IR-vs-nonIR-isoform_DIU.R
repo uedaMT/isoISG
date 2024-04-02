@@ -7,6 +7,9 @@
 # Author: Mahoko T. Ueda
 # Date: May 30, 2023
 #
+# Usage: Rscript IR-vs-nonIR-isoform_DIU.R [options]
+#        ex) Rscript IR-vs-nonIR-isoform_DIU.R --help
+#
 #################################################################
 
 args <- commandArgs(trailingOnly = TRUE)
@@ -39,7 +42,6 @@ for (i in seq_along(args)) {
 
 # Use the options
 setwd(dir)
-
 
 #=======================================
 # File explanation
@@ -115,17 +117,17 @@ methods(class=class(d))
 # (2) it has a relative abundance proportion of at least 0.1 in at least n.small samples,
 # (3) the total count of the corresponding gene is at least 10 in all n samples.
 #
-#min_samps_gene_expr: Minimal number of samples where genes should be expressed. 
-#min_samps_feature_expr: Minimal number of samples where features should be expressed.
-#min_samps_feature_prop: Minimal number of samples where features should be expressed.
-#min_gene_expr: Minimal gene expression.
-#min_feature_expr: Minimal feature expression.
-#min_feature_prop: Minimal proportion for feature expression. This value should be between 0 and 1.
-#run_gene_twice: Whether to re-run the gene-level filter after the feature-level filters.
-#minor_allele_freq: Minimal number of samples where each of the genotypes has to be present.
+# min_samps_gene_expr: Minimal number of samples where genes should be expressed. 
+# min_samps_feature_expr: Minimal number of samples where features should be expressed.
+# min_samps_feature_prop: Minimal number of samples where features should be expressed.
+# min_gene_expr: Minimal gene expression.
+# min_feature_expr: Minimal feature expression.
+# min_feature_prop: Minimal proportion for feature expression. This value should be between 0 and 1.
+# run_gene_twice: Whether to re-run the gene-level filter after the feature-level filters.
+# minor_allele_freq: Minimal number of samples where each of the genotypes has to be present.
 #		  
-#n = nrow(gr)
-#n.small = min(table(gr$condition))
+# n = nrow(gr)
+# n.small = min(table(gr$condition))
 #-------------------------------------------------------------------------------------------------
 
 
