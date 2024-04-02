@@ -11,7 +11,7 @@
 # This script performs cupcake cllapsing
 # Please ensure that you have the necessary dependencies installed before running this script.
 # Author: Mahoko T. Ueda
-# Date: May 30, 2023
+# Date: Mar 27, 2024
 #
 #
 ###############################
@@ -20,7 +20,8 @@
 
 CPU=10
 # High-quality fasta of isoseq3 cluster output
-FAST=/path/to/the/directory/[NAME].flnc.clst.hq.fasta
+FAST=/path/to/the/directory/[NAME].flnc.clst.hq.fasta  #change the file name
+BAM=/path/to/the/directory/[NAME].flnc.clst.hq.bam  #change the file name
 
 
 #================================== Activate cupcake ================================
@@ -32,4 +33,4 @@ mkdir -p cupcake
 collapse_isoforms_by_sam.py --input ${FAST} \
 	       --max_5_dif 100 \
 	       --max_3_diff 50 \
-           --sam ${SAM} -o cupcake/flnc.clst.hq
+	       --bam ${BAM} -o cupcake/flnc.clst.hq
