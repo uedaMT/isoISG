@@ -3,7 +3,7 @@
 
 #==================================================
 # Author: Mahoko T. Ueda
-# Date: May 10, 2023
+# Date: Mar. 27, 2024
 # Description: This script runs FLAIR, a bioinformatics tool for analyzing nanopore sequencing data. 
 # FLAIR must be installed prior to running this script. The job can be submitted to a SLURM cluster for execution.
 # 
