@@ -14,30 +14,35 @@
 # Set your parameters
 ###############################
 
-DIR1=/path/to/your/vcf_file
-DIR2=/path/to/your/vcf_file/expression_file
+#study name
+KEY=GWAS 
 
-VCF=VCF_file
-BED=Expression_file
-QTL=QLT_outout
-GWAS=QTLtools_ext_all_associations_v1.0.2.1_hg38_sort.txt
-HOT=hotspots.bed #(lifted-to-hg38: hotspots_b37_hg19.bed provided by QTLtools )
-KEY=GWAS #study name
+#Directories
+DIR1=/path/to/your/vcf_file
+DIR2=/path/to/your/expression_file
+OUT=/path/to/your/output
+
+# Files
+VCF=/path/to/your/VCF_file
+BED=/path/to/your/Expression_file
+QTL=/path/to/your/QLT_outout
+GWAS=/path/to/your/GWAS_fata.txt
+HOT=/path/to/your/hotspots_file
 
 ###############################
 
 
-mkdir -p out
+mkdir -p ${OUT} 
 
 for i in $(seq 1 22); do
-#for i in $(seq 4 7); do
     QTLtools rtc --vcf ${DIR1}/chr${i}_${VCF}.gz \
 	 --bed ${DIR2}/chr${i}_${BED}.gz \
 	 --hotspot ${HOT} \
 	 --gwas-cis ${GWAS} \
 	  ${QTL} \
 	  --normal \
-	  --out out/chr${i}_rtc_${KEY}.txt
+	  --out ${OUT}/chr${i}_rtc_${KEY}.txt
+
 	
 	  # Merge results
       awk '{ if ($20 >= 0.9){print $0}}' out/chr${i}_rtc_${KEY}.txt >out/chr${i}_rtc_${KEY}_0.9.txt
