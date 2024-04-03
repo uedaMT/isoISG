@@ -32,10 +32,9 @@ The following sequencing datasets were generated and analyzed in this study:
 - **PacBio Sequel II/IIe Iso-Seq data**: Accession number: [DRA016394](https://identifiers.org/insdc.sra:DRA016394)
 - **ONT RNA-seq**: Accession number: [DRA016393](https://identifiers.org/insdc.sra:DRA016393)
 - **Short-read RNA-seq data**: Accession number: [DRA016395](https://identifiers.org/insdc.sra:DRA016395)<br><br><br>
-
 These datasets are available in the DDBJ Sequence Read Archive (DRA), and can be accessed using the provided accession numbers.<br><br><br>
 
 
-A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
+- A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
 If you're interested in our research, please check out our full paper for an overview of our main findings. Thank you for visiting our repository!
