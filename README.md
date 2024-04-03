@@ -9,7 +9,7 @@ To explore the isoISG annotation further, we have made available the following f
 The isoISG annotation files generated in LCL
                                   
 - GTF file: [isoISG.gtf.gz](https://drive.google.com/u/4/uc?id=1Yaw3TFNB3AT9HVHPWEOqVgpPsb0mm8D7&export=download)
-- GTF file with strict condition filtering (with CAGE peaks and polyA motif) [isoISG-strict.gtf.gz] (https://drive.google.com/u/4/uc?id=1zkaXl88swa0I5o6oPvfn679ii0chgUfe&export=download)
+- GTF file with strict condition filtering "with CAGE peaks and polyA motif" [isoISG-strict.gtf.gz](https://drive.google.com/u/4/uc?id=1zkaXl88swa0I5o6oPvfn679ii0chgUfe&export=download)
 - Nucleotide sequence: [isoISG_nt.fa.gz](https://drive.google.com/u/4/uc?id=1447GPoYqbjyqlhskpcAh22UCywfieuuH&export=download)
 - Amino acid sequence: [isoISG_aa.fa.gz](https://drive.google.com/u/4/uc?id=1w0BJhcenNjnMJXkOtqg_9hporbnJUJRW&export=download)
 - SQANTI classification file: [isoISG_sqanti-classification.txt.gz](https://drive.google.com/u/4/uc?id=1nIWPZVXKruxbNjZOjhn7BYiJDq7oIDFV&export=download)<br><br><br>
