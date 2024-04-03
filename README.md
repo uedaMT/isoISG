@@ -9,7 +9,7 @@ To explore the isoISG annotation further, we have made available the following f
 **The isoISG annotation files generated in LCL**
                                   
 - GTF file: [isoISG.gtf.gz](https://drive.google.com/u/4/uc?id=1Yaw3TFNB3AT9HVHPWEOqVgpPsb0mm8D7&export=download)
-- GTF file with strict condition [isoISG-strict.gtf.gz](https://drive.google.com/u/4/uc?id=1zkaXl88swa0I5o6oPvfn679ii0chgUfe&export=download)
+- GTF file with strict condition [isoISG-strict.gtf.gz](https://drive.google.com/u/4/uc?id=1zkaXl88swa0I5o6oPvfn679ii0chgUfe&export=download)<br>
   This file contains isoforms that are stringently filtered to include only those with both CAGE peaks and polyA motifs.
 - SQANTI classification file: [isoISG_sqanti-classification.txt.gz](https://drive.google.com/u/4/uc?id=1nIWPZVXKruxbNjZOjhn7BYiJDq7oIDFV&export=download)<br><br><br>
 
