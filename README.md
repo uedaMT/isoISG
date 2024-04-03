@@ -31,7 +31,7 @@ To explore the isoISG annotation further, we have made available the following f
 The following sequencing datasets were generated and analyzed in this study:
 - **PacBio Sequel II/IIe Iso-Seq data**: Accession number: [DRA016394](https://identifiers.org/insdc.sra:DRA016394)
 - **ONT RNA-seq**: Accession number: [DRA016393](https://identifiers.org/insdc.sra:DRA016393)
-- **Short-read RNA-seq data**: Accession number: [DRA016395](https://identifiers.org/insdc.sra:DRA016395)<br><br><br>
+- **Short-read RNA-seq data**: Accession number: [DRA016395](https://identifiers.org/insdc.sra:DRA016395)
 These datasets are available in the DDBJ Sequence Read Archive (DRA), and can be accessed using the provided accession numbers.<br><br><br>
 
 
