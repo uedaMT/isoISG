@@ -25,7 +25,7 @@ To explore the isoISG annotation further, we have made available the following f
 
 **Supplementary Data for our paper**
 - Data.gz
-- Table.gz
+- Table.gz<br><br><br>
 
 A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
