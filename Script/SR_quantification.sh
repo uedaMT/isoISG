@@ -8,7 +8,7 @@
 # Run RNA-seq quantification using salmon
 #############################################
 #
-# This script performs RNA-seq quantification with salmon.
+# This script performs short-read RNA-seq quantification with salmon.
 # Please ensure that you have the necessary dependencies installed before running this script.
 # Author: Mahoko T. Ueda
 # Date: March 27, 2024
