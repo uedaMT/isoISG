@@ -23,12 +23,12 @@ To explore the isoISG annotation further, we have made available the following f
 - Isoforms with IR in the CDS of reference gene: [isoISG_txt2gene.txt.gz](https://drive.google.com/u/4/uc?id=1blInW5zaI_qFeUWz8es8qGqJZOoHKLtQ&export=download)
 <br><br><br>
 
-**Supplementary Data for our paper**
+**Supplementary data for our paper**
 - Data.gz
 - Table.gz<br><br><br>
 
 
-### Scripts for Analysis
+### Scripts for analysis
 The scripts used for analysis in our study can be found in this repository. They are instrumental for replicating our analysis or adapting it to your own datasets.
 - [Access the Scripts](https://github.com/uedaMT/isoISG/tree/main/Script)<br><br><br>
 
