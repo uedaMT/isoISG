@@ -37,7 +37,7 @@ The following sequencing datasets were generated and analyzed in this study:
 
 ### Scripts for Analysis
 The scripts used for analysis in our study can be found in this repository. They are instrumental for replicating our analysis or adapting it to your own datasets.
-- [Access the Scripts](https://github.com/someuser/someproject/tree/master/scripts)<br><br><br>
+- [Access the Scripts](https://github.com/uedaMT/isoISG/tree/main/Script)<br><br><br>
 
 
 ## Visualization tool:
