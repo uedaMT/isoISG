@@ -3,9 +3,10 @@ Welcome to our repository, which serves as a source of annotation data, scripts,
 
 In this study, we generated a novel isoform annotation for IFN-α-stimulated and unstimulated B-cells called isoISG (isoforms of Interferon-Stimulated Genes). This was accomplished using the advanced PacBio sequencing platforms (Sequel II/IIe), enabling us to explore the complex landscape of alternative splicing events triggered by the interferon response.
 
+## Download
+
 To explore the isoISG annotation further, we have made available the following files:<br><br>
 
-## Download
 **The isoISG annotation files generated in LCL**
                                   
 - GTF file: [isoISG.gtf.gz](https://drive.google.com/u/4/uc?id=1Yaw3TFNB3AT9HVHPWEOqVgpPsb0mm8D7&export=download)
