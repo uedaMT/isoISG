@@ -1,6 +1,6 @@
-##########################################################################
-# Simulating RNA-seq Data with Polyester Based on Quantification Results
-##########################################################################
+###################################################################################
+# Simulating short-read RNA-seq Data with Polyester Based on Quantification Results
+####################################################################################
 #
 # This script simulates RNA-seq data based on Salmon quantification results,
 # using the Polyester package. 
@@ -20,7 +20,7 @@
 # Author: Mahoko T. Ueda
 # Date: March 27, 2024
 #
-##########################################################################
+####################################################################################
 
 args <- commandArgs(trailingOnly = TRUE)
 
