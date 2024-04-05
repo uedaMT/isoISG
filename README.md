@@ -27,17 +27,17 @@ To explore the isoISG annotation further, we have made available the following f
 - Table.gz<br><br><br>
 
 
+### Scripts for Analysis
+The scripts used for analysis in our study can be found in this repository. They are instrumental for replicating our analysis or adapting it to your own datasets.
+- [Access the Scripts](https://github.com/uedaMT/isoISG/tree/main/Script)<br><br><br>
+
+
 ## Raw data availability
 These raw datasets are available in the DDBJ Sequence Read Archive (DRA), and can be accessed using the provided accession numbers.
 The following sequencing datasets were generated and analyzed in this study:
 - **PacBio Sequel II/IIe Iso-Seq data**: Accession number: [DRA016394](https://identifiers.org/insdc.sra:DRA016394)
 - **ONT RNA-seq**: Accession number: [DRA016393](https://identifiers.org/insdc.sra:DRA016393)
 - **Short-read RNA-seq data**: Accession number: [DRA016395](https://identifiers.org/insdc.sra:DRA016395)<br><br><br>
-
-
-### Scripts for Analysis
-The scripts used for analysis in our study can be found in this repository. They are instrumental for replicating our analysis or adapting it to your own datasets.
-- [Access the Scripts](https://github.com/uedaMT/isoISG/tree/main/Script)<br><br><br>
 
 
 ## Visualization tool:
