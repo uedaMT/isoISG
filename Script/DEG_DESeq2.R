@@ -63,12 +63,12 @@ for (i in seq_along(args)) {
 ######################################
 
 library("tximport")
-library("readr")
+library("DESeq2")
 
 # Use the options
 setwd(dir)
 
-samples <- read.table(file_list, header = F, sep="\t")
+samples <- read.table(file_list, header = T, sep="\t")
 files <- file.path(salmon, samples$Sample, "quant.sf")
 
 # Read tx2gene mapping
