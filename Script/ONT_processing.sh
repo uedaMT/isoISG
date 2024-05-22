@@ -153,7 +153,7 @@ python flair.py align -g "${genome}" \
 mkdir -p ${dir}/correct
 python flair.py correct -q $dir/${out}.bed \
        -g ${GENOME} \
-       -c psl/hg38-${ASM}_chrom_size.txt \
+       -c psl/hg38_chrom_size.txt \
        -o ${dir}/correct/${out} \
        -f ${gtf} \
        -j ${jnc} \
