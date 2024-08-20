@@ -19,7 +19,7 @@ To explore the isoISG annotation further, we have made available the following f
 - Amino acid sequence: [isoISG_aa.fa.gz](https://drive.google.com/u/4/uc?id=1w0BJhcenNjnMJXkOtqg_9hporbnJUJRW&export=download)<br><br><br>
 
 **Data for DEG/DET analysis using isoISG**
-- Gene and isoform table: [isoISG_txt2gene.txt.gz](https://drive.google.com/u/4/uc?id=1rnLK59YDGbGuUn4pvCc05RhjQ9wzjlhS&export=download)
+- Gene and isoform table: [isoISG_txt2gene.txt.gz](https://zenodo.org/records/13282235/files/isoISG_txt2gene.txt.gz?download=1)
 - Isoforms with IR in the CDS of reference gene: [isoISG_txt2gene.txt.gz](https://drive.google.com/u/4/uc?id=1blInW5zaI_qFeUWz8es8qGqJZOoHKLtQ&export=download)
 <br><br><br>
 
