@@ -9,23 +9,19 @@ To explore the isoISG annotation further, we have made available the following f
 
 **The isoISG annotation files generated in LCL**
                                   
-- GTF file: [isoISG.gtf.gz](https://drive.google.com/u/4/uc?id=1Yaw3TFNB3AT9HVHPWEOqVgpPsb0mm8D7&export=download)
-- GTF file with strict condition [isoISG-strict.gtf.gz](https://drive.google.com/u/4/uc?id=1zkaXl88swa0I5o6oPvfn679ii0chgUfe&export=download)<br>
+- GTF file: [isoISG.gtf.gz](https://zenodo.org/records/13282235/files/isoISG.gtf.gz?download=1)
+- GTF file with strict condition [isoISG-strict.gtf.gz](https://zenodo.org/records/13282235/files/isoISG-strict.gtf.gz?download=1)<br>
   This file contains isoforms that are stringently filtered to include only those with both CAGE peaks and polyA motifs.
-- SQANTI classification file: [isoISG_sqanti-classification.txt.gz](https://drive.google.com/u/4/uc?id=1nIWPZVXKruxbNjZOjhn7BYiJDq7oIDFV&export=download)<br><br><br>
+- SQANTI classification file: [isoISG_sqanti-classification.txt.gz](https://zenodo.org/records/13282235/files/isoISG_sqanti-classification.txt.gz?download=1)<br><br><br>
 
 **Isoform sequences**
-- Nucleotide sequence: [isoISG_nt.fa.gz](https://drive.google.com/u/4/uc?id=1447GPoYqbjyqlhskpcAh22UCywfieuuH&export=download)
-- Amino acid sequence: [isoISG_aa.fa.gz](https://drive.google.com/u/4/uc?id=1w0BJhcenNjnMJXkOtqg_9hporbnJUJRW&export=download)<br><br><br>
+- Nucleotide sequence: [isoISG_nt.fa.gz](https://zenodo.org/records/13282235/files/isoISG_nt.fa.gz?download=1)
+- Amino acid sequence: [isoISG_aa.fa.gz](https://zenodo.org/records/13282235/files/isoISG_aa.fa.gz?download=1)<br><br><br>
 
 **Data for DEG/DET analysis using isoISG**
 - Gene and isoform table: [isoISG_txt2gene.txt.gz](https://zenodo.org/records/13282235/files/isoISG_txt2gene.txt.gz?download=1)
-- Isoforms with IR in the CDS of reference gene: [isoISG_txt2gene.txt.gz](https://drive.google.com/u/4/uc?id=1blInW5zaI_qFeUWz8es8qGqJZOoHKLtQ&export=download)
+- Isoforms with IR in the CDS of reference gene: [isoISG_txt2gene_IR-isoform_cds.txt.gz](https://zenodo.org/records/13282235/files/isoISG_txt2gene_IR-isoform_cds.txt.gz?download=1)
 <br><br><br>
-
-**Supplementary data for our paper**
-- Data.gz
-- Table.gz<br><br><br>
 
 
 ### Scripts for analysis
