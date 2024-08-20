@@ -36,9 +36,9 @@ The scripts used for analysis in our study can be found in this repository. They
 ## Raw data availability
 These raw datasets are available in the DDBJ Sequence Read Archive (DRA), and can be accessed using the provided accession numbers.
 The following sequencing datasets were generated and analyzed in this study:
-- **PacBio Sequel II/IIe Iso-Seq data**: Accession number: [DRA016394](https://identifiers.org/insdc.sra:DRA016394)
-- **ONT RNA-seq**: Accession number: [DRA016393](https://identifiers.org/insdc.sra:DRA016393)
-- **Short-read RNA-seq data**: Accession number: [DRA016395](https://identifiers.org/insdc.sra:DRA016395)<br><br><br>
+- **PacBio Sequel II/IIe Iso-Seq data**: Accession number: [DRA016394](https://humandbs.dbcls.jp/en/hum0312-v1#iso)
+- **ONT RNA-seq**: Accession number: [DRA016393](https://humandbs.dbcls.jp/en/hum0312-v1#DRA016393)
+- **Short-read RNA-seq data**: Accession number: [DRA016395](https://humandbs.dbcls.jp/en/hum0312-v1#DRA016395)<br><br><br>
 
 
 ## Visualization tool:
