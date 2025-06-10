@@ -42,6 +42,8 @@ A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
 If you're interested in our research, please check out our full paper for an overview of our main findings. Thank you for visiting our repository!
 
+---
+**How to cite**
 For a detailed description of the methodology and results, please refer to our published paper:
 - Ueda MT et al. **Functional and dynamic profiling of transcript isoforms reveals essential roles of alternative splicing in interferon response**, *Cell Genomics* (2024).
 
