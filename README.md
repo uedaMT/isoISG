@@ -37,7 +37,7 @@ The following sequencing datasets were generated and analyzed in this study:
 - **Short-read RNA-seq data**: Accession number: [DRA016395](https://humandbs.dbcls.jp/en/hum0312-v1#DRA016395)<br><br><br>
 
 
-## Visualization tool:
+## Visualization tool
 A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
 
