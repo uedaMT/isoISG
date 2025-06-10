@@ -40,13 +40,9 @@ The following sequencing datasets were generated and analyzed in this study:
 ## Visualization tool:
 A UCSC browser is available: https://genome.ucsc.edu/s/UEDA/isoISG<br><br>
 
-If you're interested in our research, please check out our full paper for an overview of our main findings. Thank you for visiting our repository!
-
-
 
 ## How to cite
-For a detailed description of the methodology and results, please refer to our published paper:
-- Ueda MT et al. **Functional and dynamic profiling of transcript isoforms reveals essential roles of alternative splicing in interferon response**, *Cell Genomics* (2024).
+If you're interested in our research, please check out our full paper for an overview of our main findings. 
+- Ueda MT et al. **Functional and dynamic profiling of transcript isoforms reveals essential roles of alternative splicing in interferon response**, *Cell Genomics* (2024).　[Read the full paper]([https://doi.org/10.1016/j.xgen.2024.100345](https://www.sciencedirect.com/science/article/pii/S2666979X24002659?via%3Dihub)
 
-[Read the full paper]([https://doi.org/10.1016/j.xgen.2024.100345](https://www.sciencedirect.com/science/article/pii/S2666979X24002659?via%3Dihub)
-
+Thank you for visiting our repository!
